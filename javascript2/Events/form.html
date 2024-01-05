@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./form.js" defer></script>
+    <title>FORM</title>
+    <style>
+        input{
+            padding: 6px;
+        }
+        button{
+            padding: 6px;
+            margin-left: 10em;
+        }
+    </style>
+  </head>
+  <body>
+    <h2 style="font-weight: bold;">REGISTER</h2>
+    <form id="form1" action="" method="get">
+      <p>
+        <label for="name">Name:</label>
+        <input 
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Your name in full"
+        />
+      </p>
+
+      <p>
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Provide your email"
+        />
+      </p>
+
+      <p>
+        <label for="password">Password:</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          placeholder="Pls provide your password"
+        />
+      </p>
+
+      <p>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input
+          id="confirmPassword"
+          name="confirmPassword"
+          type="password"
+          placeholder="Your password again!"
+        />
+      </p>
+      <button id="submit_btn">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+Create a web page that validates a user and return a user details 
+    *Acceptdetails using prompt
+    *Use and object to store user details
+    *Validates user details
+        *Username must be less than ten
+        *Password must be greater than six
+        *User must confirms password 
+        *If username and password do not match, alert user
+    *Display user deatails

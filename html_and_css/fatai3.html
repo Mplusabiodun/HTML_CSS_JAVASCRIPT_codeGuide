@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Page</title>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <fieldset>
+        <h2>LOGIN</h2>
+        <input
+          type="text"
+          name="Username"
+          id=""
+          placeholder="Username"
+          required
+        />
+        <input
+          type="password"
+          name="Password"
+          id=""
+          placeholder="Password"
+          required
+        />
+        <input type="email" name="email" id="" placeholder="email" required />
+        <input type="submit" />
+      </fieldset>
+    </form>
+
+    <!-- LABELS(for/id), VALIDATIONS(required & correct input), 
+        PLACEHOLDERS(underneath text)-->
+    <form action="www.wikipedia.org" method="post">
+      <fieldset>
+        <h2>LOGIN</h2>
+
+        <div>
+          <label for="Username">Username:</label>
+          <input
+            id="Username"
+            type="text"
+            name="Username"
+            placeholder="Username"
+            required
+          />
+        </div>
+        
+
+        <div>
+          <label for="password">Password:</label>
+          <input
+            id="password"
+            type="password"
+            name="Password"
+            placeholder="Password"
+            pattern=".{5,10}"
+            require title="password must be btween 5-10 character"
+          />
+        </div>
+        
+        <div>
+          <label for="email">Email:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="email@gmail.com"
+            required
+          />
+        </div>
+        
+
+        <!-- name="Petchoice", so the user will only be able to select one either dogs or cats,
+             Value - for easy identification while getting or submitting
+            Name - name attributes are for identification when sending the request, 
+            for the receiver to know the particular one selected or commenst-->
+        <div>
+          <label>Do you prefer Dogs or Cats <br>
+          <input type="radio" name="Petchoice" id="dogs" value="DOGS" />
+          <label for="dogs">Dogs</label>
+  
+          <input type="radio" name="Petchoice" id="cats" value="CATS" />
+          <label for="cats">Cats</label> 
+        </label>
+        </div>
+
+        <div>
+          <label for="colour">Select a colour</label> 
+          <select id="colour" name="colour">
+            <option value="">color</option>
+            <option value="orange">Orange</option>
+            <option value="blue">Blue</option>
+            <option value="white">White</option>
+          </select> 
+        </div>
+
+      </div>
+      <label for="comment">Make some comments</label> <br>
+      <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        <div>
+
+
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
